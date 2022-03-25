@@ -1,0 +1,21 @@
+articulo1=input('Primer articulo: ')
+precio1=input('Precio: 'or '0')
+articulo2=input('Segundo articulo: ')
+precio2=input('Precio: 'or '0')
+articulo3=input('Tercer articulo: ')
+precio3=input('Precio: 'or '0')
+precios=[float(precio1),float(precio2),float(precio3)]
+total=sum(precios)
+iva=total*0.21
+
+print("factura".upper().center(80,"-"))
+print(articulo1.title().ljust(73,".")+precio1.zfill(6).rjust(1),'$')
+print(articulo2.title().ljust(73,".")+precio2.zfill(6).rjust(1),'$')
+print(articulo3.title().ljust(73,".")+precio3.zfill(6).rjust(1),'$')
+print("-".center(80,"-"))
+print("Precio base: ".rjust(73),"%.3f".zfill(6)
+      %(total))
+print('IVA: '.rjust(73),"%.3f".zfill(6)
+      %(iva))
+print('Total a pagar'.rjust(73),"%.3f".zfill(6)
+      %(total+iva))
