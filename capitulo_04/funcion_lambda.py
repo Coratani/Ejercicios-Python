@@ -9,7 +9,7 @@ area_rect=lambda base,altura:base*altura
 area_tri=lambda b, a: area_rect(b,a)/2
 mibase=5
 mialtura=3
-print('el arae del cuadrado es: ')
+print('el area del cuadrado es: ')
 print(area_rect(mibase,mialtura))
 print('el area del triangulo es: ')
 print(area_tri(mibase,mialtura))
